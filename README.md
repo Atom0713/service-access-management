@@ -11,6 +11,13 @@ If you want to use local virtual environenment:
 2. Install dependencies with `poetry install`
 3. Run `flask --app src\service\app run`
 
+Access app at `http://localhost:5000`
+
+## Running service locally using docker
+1. Build service image: `docker build -t service-access-management .`
+2. Run the app: `docker run -d -p 8000:5000 service-access-management`
+
+Access app at `http://localhost:8000`
 
 ## Development
 
